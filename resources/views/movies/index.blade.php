@@ -11,11 +11,10 @@
             <div class="col-4">
                 <img src="{{ $movie->image }}" alt="{{ $movie->title }}">
                 <h2>{{ $movie->title }}</h2>
+                <a class="btn btn-primary" href="{{ route('movies.show', $movie->id) }}">Details</a>
             </div>
              @endforeach
         </div>
     </div>
-
 </main>
-
 @endsection
