@@ -9,9 +9,9 @@
         <div class="row">
             @foreach ($movies as $movie)
             <div class="col-4">
-                <img src="{{ $movie->image }}" alt="{{ $movie->title }}">
+                <img class="w-100 border border-primary" src="{{ $movie->image }}" alt="{{ $movie->title }}">
                 <h2>{{ $movie->title }}</h2>
-                <a class="btn btn-primary" href="{{ route('movies.show', $movie->id) }}">Details</a>
+                <a class="btn btn-primary my-2" href="{{ route('movies.show', $movie->id) }}">Details</a>
             </div>
              @endforeach
         </div>
